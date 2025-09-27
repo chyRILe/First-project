@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing up</title>
+     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <div id="logoutContainer" style="display: none;">
+    <button id="logoutBtn" class="home">Logout</button>
+</div>
+
+    <header class="home-header">
+        <div class="logo">
+            <img src="logo.jpg" alt="McDonald's Logo">
+            </div>
+            <div class="title">
+            <h1>McDonald's</h1>
+        </div>
+         <a href="cart.html" class="cart-icon">
+        <img src="cart.png" alt="Cart" />
+        <span class="cart-count" id="cartCount">0</span>
+        </a>
+      
+       <div class="navbar">
+        <nav class="navbar">
+            <a href="index.html" style="text-decoration: none;" class="home">Home</a>
+            <a href="Menu.html" style="text-decoration: none;" class="home">Menu</a>
+            <a href="Log-in.html" style="text-decoration: none;"class="home">login</a>
+            <a href="sign-up.html"style="text-decoration: none;"class="home">sign-up</a>
+            <a href="contact.html"style="text-decoration:none;"class="home">contact</a>
+        </nav>
+        </div>
+    </header>
+    <h1 class="welcome-text-menu">Sign up | We would love to hear from you!</h1>
+
+
+    <main id="signup"   class="homesignup" >
+    <div class="cover">
+        <div class="cover-signup">
+            <h1>Create Your Account</h1>
+            <p>Your journey to excellence starts here.</p>
+            <form id= "signup-form"   onsubmit="createAccount(event)" class="contact-form">
+                <label for="name" class="label-signup">Full Name:</label>
+                <input id="name" type="text" placeholder="Enter your Name/UserName"  class="name"  required>
+
+                <label for="name" class="label-signup">Email Address:</label>
+                <input id="signup-email" type="email" placeholder="Example@gmail.com" class="name" required>
+
+                <label for="name" class="label-signup">Password:</label>
+                <input id="signup-password" type="password" placeholder="Enter Your Password" class="name" required>
+                
+                <label for="name" class="label-signup">Confirm:</label>
+                <input id="confirm-password"  type="password" placeholder="Confim your  Password" class="name" required>
+                <br>
+                <button type="submit" class="send">SIGN-UP</button>
+                
+                <p>Already Have an account? <a href="Log-in.html" class="signup-login" >LOG-IN</a></p>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    
+    <footer class="footer">&copy; 2025 McDonald's. All rights reserved.
+        <nav class= "Legal">
+            <a href="https://mcdonalds.com.ph/terms-and-conditions" target="_blank"><p>&copy; Optional: Social media links,Terms of Service</a> |
+            <a href="https://www.mcdonalds.com.ph/privacy-policy" target="_blank" >Privacy Policy</a></p>
+          </nav>
+          <h4>Follow Us</h4>
+        <div class="social-icons">
+         <img src="fb.jpg" alt="McDonald's Logo">
+         <img src="ig.webp" alt="McDonald's Logo">
+        <img src="tw.png" alt="McDonald's Logo">  
+        <img src="twitter.png" alt="McDonald's Logo"> 
+        </div>
+      </footer>
+
+
+
+      
+</body>
+</html>
